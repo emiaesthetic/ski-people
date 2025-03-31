@@ -112,8 +112,11 @@
               <article class="card">
                 <div class="card__img-wrapper">
                   <img
-                    src="/src/assets/img/goods/product-1.jpg"
+                    src="src/assets/img/goods/product-1.jpg"
+                    width="302"
+                    height="250"
                     alt="Горные лыжи, синие"
+                    loading="lazy"
                   />
                   <button
                     class="card__add-to-favorite"
@@ -153,8 +156,10 @@
             <p class="product__id">арт.5&nbsp;84348945757</p>
 
             <table class="product__table table">
-              <thead class="table__head" colspan="2">
-                Общие характеристики
+              <thead class="table__head">
+                <tr class="table__head-row">
+                  <th class="table__title" colspan="2">Общие характеристики</th>
+                </tr>
               </thead>
               <tbody class="table__body">
                 <tr class="table__row">
@@ -201,6 +206,146 @@
           </div>
         </div>
       </section>
+
+      <section class="cart">
+        <div class="container">
+          <h2 class="cart__title">Корзина</h2>
+
+          <div class="cart__content">
+            <ul class="cart__list">
+              <li class="cart__item">
+                <a class="cart__item-img" href="#">
+                  <img
+                    src="src/assets/img/cart/product-1.jpg"
+                    width="120"
+                    height="90"
+                    alt="Горные лыжи, синие"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="cart__item-details">
+                  <h3 class="cart__item-title">Горные лыжи</h3>
+                  <p class="cart__item-id">арт.&nbsp;84348945757</p>
+                  <div class="cart__item-counter counter">
+                    <button
+                      class="counter__button counter__button-minus"
+                      type="button"
+                      aria-label="Уменьшить на 1"
+                    >
+                      -
+                    </button>
+                    <p class="counter__value">1</p>
+                    <button
+                      class="counter__button counter__button-minus"
+                      type="button"
+                      aria-label="Увеличить на 1"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <p class="cart__item-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="cart__order">
+              <h3 class="cart__order-title">Оформление</h3>
+              <div class="cart__order-details">
+                <p class="cart__order-count">
+                  <span class="cart__order-number">4</span>
+                  &nbsp;товара на&nbsp;сумму:
+                </p>
+                <p class="cart__order-count">20&nbsp;000&nbsp;0₽</p>
+              </div>
+              <p class="cart__order-delivery">Доставка&nbsp;0&nbsp;₽</p>
+              <button class="cart__order-button" type="submit" form="cartForm">
+                Оформить заказ
+              </button>
+            </div>
+
+            <form class="cart__form" id="cartForm" action="#">
+              <h3 class="cart__form-title">Данные для доставки</h3>
+              <fieldset class="cart__form-personal">
+                <input
+                  class="cart__form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Фамилия Имя Отчество"
+                />
+                <input
+                  class="cart__form-input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                />
+                <input
+                  class="cart__form-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <input
+                  class="cart__form-input"
+                  type="text"
+                  name="address"
+                  placeholder="Адрес доставки"
+                />
+                <textarea
+                  class="cart__form-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Комментарий к заказу"
+                ></textarea>
+              </fieldset>
+
+              <fieldset class="cart__form-radio">
+                <legend class="cart__form-legend">Доставка</legend>
+                <label class="cart__form-label">
+                  Доставка
+                  <input
+                    class="cart__form-radio"
+                    type="radio"
+                    name="deliveryType"
+                    value="delivery"
+                  />
+                </label>
+                <label class="cart__form-label">
+                  Самовывоз
+                  <input
+                    class="cart__form-radio"
+                    type="radio"
+                    name="pickup"
+                    value="2"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset class="cart__form-common">
+                <legend class="cart__form-legend">Оплата</legend>
+                <label class="cart__form-label">
+                  Картой при получении
+                  <input
+                    class="cart__form-radio"
+                    type="radio"
+                    name="paymentType"
+                    value="card"
+                  />
+                </label>
+                <label class="cart__form-label">
+                  Наличными при получении
+                  <input
+                    class="cart__form-radio"
+                    type="radio"
+                    name="payment"
+                    value="cash"
+                  />
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -218,16 +363,22 @@
 
         <div class="footer__content">
           <ul class="footer__developers">
-            <li class="footer__creators-text">
+            <li class="footer__developers-item">
               Designer:
-              <a class="footer__creators-link" href="mailto:methted@gmail.com">
+              <a
+                class="footer__developers-link"
+                href="mailto:methted@gmail.com"
+              >
                 Anastasia Ilina
               </a>
             </li>
 
-            <li class="footer__creators-text">
+            <li class="footer__developers-item">
               Developer:
-              <a class="footer__creators-link" href="mailto:methted@gmail.com">
+              <a
+                class="footer__developers-link"
+                href="mailto:methted@gmail.com"
+              >
                 Emilyan Aesthetic
               </a>
             </li>

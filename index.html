@@ -11,5 +11,55 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a
+            class="header__logo logo"
+            href="/"
+            title="Переход на главную страницу"
+            aria-label="Переход на главную страницу"
+          >
+            <svg width="130" height="28" aria-hidden="true">
+              <use xlink:href="#logo" />
+            </svg>
+          </a>
+
+          <form class="header__search search" action="#">
+            <input
+              class="search-input"
+              type="search"
+              name="search"
+              placeholder="Введите запрос"
+            />
+            <button class="search-button" type="submit" aria-label="Поиск">
+              <svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="#search" />
+              </svg>
+            </button>
+          </form>
+
+          <ul class="header__user-actions user-actions">
+            <li class="user-actions-item">
+              <a class="user-actions-link" href="/favorite">
+                <span class="user-actions-text">Избранное</span>
+                <svg width="16" height="14" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </a>
+            </li>
+            <li class="user-actions-item">
+              <a class="user-actions-link" href="/basket">
+                <span class="user-actions-text">Корзина</span>
+                <span class="user-actions-count">(5)</span>
+                <svg width="16" height="16" aria-hidden="true">
+                  <use xlink:href="#basket" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

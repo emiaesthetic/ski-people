@@ -102,6 +102,42 @@
           </nav>
         </div>
       </div>
+
+      <section class="goods">
+        <div class="container">
+          <h2 class="goods__title">Избранное</h2>
+
+          <ul class="goods__list">
+            <li class="goods__item">
+              <article class="product">
+                <div class="product__img-wrapper">
+                  <img
+                    src="/src/assets/img/goods/product-1.jpg"
+                    alt="Горные лыжи, синие"
+                  />
+                  <button
+                    class="product__add-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+                <h3 class="product__title">
+                  <a class="product__link" href="#">Горные лыжи</a>
+                </h3>
+                <p class="product__price">5 000 ₽</p>
+
+                <button class="product__add-basket" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

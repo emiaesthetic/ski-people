@@ -20,7 +20,7 @@ export default defineConfig({
       },
     }),
     createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), '/src/assets/icons')],
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
       symbolId: '[name]',
     }),
   ],

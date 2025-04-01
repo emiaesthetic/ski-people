@@ -1,0 +1,47 @@
+@use '../abstracts/mixins' as mixins;
+
+.search {
+  --btn-size: 24px;
+
+  position: relative;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    padding: 12px calc(var(--btn-size) + 24px * 2) 12px 24px;
+    border: none;
+    border-radius: var(--border-radius-large);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height);
+    background-color: var(--background-muted);
+    color: var(--color-dark);
+
+    @include mixins.hover {
+      outline: 1px solid var(--color-gray);
+    }
+
+    @include mixins.focus-outline(0, var(--color-gray));
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: var(--border-radius-small);
+    transform: translateY(-50%);
+
+    @include mixins.flex-center(true);
+
+    @include mixins.hover {
+      outline: 1px solid var(--color-gray);
+    }
+
+    @include mixins.focus-outline(0, var(--color-gray));
+  }
+}

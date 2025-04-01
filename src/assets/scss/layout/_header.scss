@@ -1,0 +1,52 @@
+@use '../abstracts/media' as media;
+
+.header {
+  &__container {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--color-gray-light);
+
+    @include media.tablet {
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    @include media.mobile {
+      gap: 18px;
+      padding-block: 18px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    flex-shrink: 0;
+    width: 130px;
+    height: 28px;
+
+    @include media.mobile {
+      width: 106px;
+      height: 22px;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 514px;
+
+    @include media.laptop {
+      max-width: 408px;
+    }
+
+    @include media.tablet {
+      order: 1;
+      max-width: 100%;
+    }
+  }
+
+  &__user-actions {
+    flex-shrink: 0;
+  }
+}

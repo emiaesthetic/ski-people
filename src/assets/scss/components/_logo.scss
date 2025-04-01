@@ -1,0 +1,14 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.logo {
+  color: var(--color-blue);
+
+  @include mixins.transition(color);
+
+  @include mixins.hover {
+    color: var(--color-blue-dark);
+  }
+
+  @include mixins.focus-outline(4px);
+}

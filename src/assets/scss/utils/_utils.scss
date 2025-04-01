@@ -1,0 +1,34 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.visually-hidden {
+  @include mixins.visually-hidden;
+}
+
+.hidden-mobile {
+  @include media.mobile {
+    display: none;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-size: var(--font-size-large);
+  font-family: var(--font-secondary);
+}
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.link-active {
+  @include mixins.transition(color);
+
+  @include mixins.hover {
+    color: var(--color-blue);
+  }
+
+  @include mixins.focus-outline(2px, var(--color-blue));
+}

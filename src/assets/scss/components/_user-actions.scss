@@ -1,0 +1,30 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.user-actions {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  align-items: center;
+
+  @include media.tablet {
+    column-gap: 16px;
+  }
+
+  &__link {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    font-size: var(--font-size-small);
+
+    & svg {
+      height: 16px;
+    }
+  }
+
+  &__count {
+    @include media.mobile {
+      order: 1;
+    }
+  }
+}

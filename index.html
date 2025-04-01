@@ -6,11 +6,34 @@
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
+    <link
+      rel="preload"
+      href="src/assets/fonts/OpenSans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="src/assets/fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="src/assets/fonts/Inter-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <title>Ski People</title>
 
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
+
+  <body class="page">
     <header class="header">
       <div class="container">
         <div class="header__container">
@@ -27,12 +50,12 @@
 
           <form class="header__search search" action="#">
             <input
-              class="search-input"
+              class="search__input"
               type="search"
               name="search"
               placeholder="Введите запрос"
             />
-            <button class="search-button" type="submit" aria-label="Поиск">
+            <button class="search__button" type="submit" aria-label="Поиск">
               <svg width="16" height="16" aria-hidden="true">
                 <use xlink:href="#search" />
               </svg>
@@ -41,16 +64,16 @@
 
           <ul class="header__user-actions user-actions">
             <li class="user-actions__item">
-              <a class="user-actions__link" href="/favorite">
-                <span class="user-actions__text">Избранное</span>
+              <a class="user-actions__link link-active" href="/favorite">
+                <span class="user-actions__text hidden-mobile">Избранное</span>
                 <svg width="16" height="14" aria-hidden="true">
                   <use xlink:href="#favorite" />
                 </svg>
               </a>
             </li>
             <li class="user-actions__item">
-              <a class="user-actions__link" href="/basket">
-                <span class="user-actions__text">Корзина</span>
+              <a class="user-actions__link link-active" href="/basket">
+                <span class="user-actions__text hidden-mobile">Корзина</span>
                 <span class="user-actions__count">(5)</span>
                 <svg width="16" height="16" aria-hidden="true">
                   <use xlink:href="#cart" />
@@ -62,7 +85,9 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main"></main>
+
+    <main class="main visually-hidden">
       <h1 class="visually-hidden">
         Ski People - магазин горнолыжного снаряжения
       </h1>

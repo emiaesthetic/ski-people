@@ -1,0 +1,52 @@
+@use './media' as media;
+
+:root {
+  /* Common Colors */
+  --color-dark: #1c1c1c;
+  --color-white: #fff;
+  --color-gray-light: #eeeff2;
+  --color-gray: #969eae;
+  --color-blue: #0044f0;
+  --color-blue-dark: #0945de;
+
+  /* Container */
+  --container-width: 1256px;
+  --container-padding-x: 92px;
+
+  /* Backgrounds */
+  --background-primary: var(--color-white);
+  --background-secondary: var(--color-dark);
+  --background-muted: var(--color-gray-light);
+
+  /* Foregrounds */
+  --foreground-primary: var(--color-dark);
+  --foreground-secondary: var(--color-white);
+  --foreground-accent: var(--color-blue);
+  --foreground-muted: var(--color-gray);
+
+  /* Fonts */
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --font-size-large: 32px;
+  --font-size-medium: 20px;
+  --font-size-base: 16px;
+  --font-size-small: 12px;
+  --line-height: 1.2;
+
+  /* Border-radius */
+  --border-radius-large: 32px;
+  --border-radius-medium: 16px;
+  --border-radius-small: 4px;
+
+  @include media.laptop {
+    --container-padding-x: 43px;
+  }
+
+  @include media.tablet {
+    --container-padding-x: 29px;
+  }
+
+  @include media.mobile {
+    --container-padding-x: 16px;
+  }
+}

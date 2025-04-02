@@ -1,0 +1,33 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.breadcrumbs {
+  padding-block: 20px;
+  font-size: var(--font-size-small);
+  color: var(--foreground-muted);
+
+  @include media.tablet {
+    padding-block: 16px;
+  }
+
+  @include media.mobile {
+    padding-block: 14px 12px;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 19px;
+  }
+
+  &__link {
+    position: relative;
+
+    &:after {
+      content: '>';
+      position: absolute;
+      top: 50%;
+      right: -13px;
+      transform: translateY(-50%);
+    }
+  }
+}

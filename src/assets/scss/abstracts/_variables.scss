@@ -7,7 +7,7 @@
   --color-gray-light: #eeeff2;
   --color-gray: #969eae;
   --color-blue: #0044f0;
-  --color-blue-dark: #0945de;
+  --color-blue-dark: #042f9c;
 
   /* Container */
   --container-width: 1256px;
@@ -17,6 +17,7 @@
   --background-primary: var(--color-white);
   --background-secondary: var(--color-dark);
   --background-accent: var(--color-blue);
+  --background-accent-dark: var(--color-blue-dark);
   --background-muted: var(--color-gray-light);
 
   /* Foregrounds */
@@ -40,14 +41,20 @@
   --border-radius-small: 4px;
 
   @include media.laptop {
+    /* Container */
     --container-padding-x: 43px;
   }
 
   @include media.tablet {
+    /* Container */
     --container-padding-x: 29px;
   }
 
   @include media.mobile {
+    /* Container */
     --container-padding-x: 16px;
+
+    /* Fonts */
+    --font-size-large: 24px;
   }
 }

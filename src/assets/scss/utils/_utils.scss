@@ -18,9 +18,18 @@
 }
 
 .title {
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: var(--font-size-large);
   font-family: var(--font-secondary);
+
+  @include media.tablet {
+    margin-bottom: 32px;
+  }
+
+  @include media.mobile {
+    margin-bottom: 24px;
+  }
 }
 
 .page {

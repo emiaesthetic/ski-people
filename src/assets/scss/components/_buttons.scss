@@ -1,0 +1,63 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.button {
+  width: 100%;
+  padding: 12px 24px;
+  border: 1px solid var(--color-blue);
+  border-radius: var(--border-radius-large);
+  font-size: var(--font-size-small);
+  background-color: transparent;
+  color: var(--foreground-accent);
+
+  @include mixins.transition(background-color, color, border-color);
+
+  @include mixins.hover {
+    background-color: var(--background-accent);
+    color: var(--foreground-secondary);
+  }
+
+  @include mixins.focus {
+    border-color: var(--color-blue-dark);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  &--accent {
+    background-color: var(--background-accent);
+    color: var(--foreground-secondary);
+
+    @include mixins.hover {
+      background-color: var(--background-accent-dark);
+      color: var(--foreground-secondary);
+    }
+
+    @include mixins.focus {
+      border-color: var(--color-blue-dark);
+    }
+  }
+}
+
+.button-favorite {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--border-radius-small);
+  color: var(--foreground-secondary);
+
+  @include mixins.flex-center(true);
+  @include mixins.transition(color);
+
+  @include mixins.hover {
+    color: var(--foreground-muted);
+  }
+
+  @include mixins.focus-outline(4px);
+
+  &--is-active {
+    color: var(--foreground-accent);
+    stroke: transparent;
+  }
+}

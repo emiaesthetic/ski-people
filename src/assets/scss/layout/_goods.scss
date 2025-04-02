@@ -1,0 +1,38 @@
+@use '../abstracts/media' as media;
+
+.goods {
+  padding-block: 20px 100px;
+
+  @include media.tablet {
+    padding-block: 16px 80px;
+  }
+
+  @include media.mobile {
+    padding-block: 12px 60px;
+  }
+
+  &__list {
+    --count-card: 4;
+
+    display: grid;
+    grid-template-columns: repeat(var(--count-card), 1fr);
+    gap: 40px 16px;
+    align-items: stretch;
+    margin-bottom: 60px;
+
+    @include media.laptop {
+      --count-card: 3;
+    }
+
+    @include media.tablet {
+      gap: 32px 10px;
+      margin-bottom: 40px;
+    }
+
+    @include media.mobile-large {
+      --count-card: 2;
+
+      gap: 32px 8px;
+    }
+  }
+}

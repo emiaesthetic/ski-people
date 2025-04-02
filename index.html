@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <nav class="breadcrumbs visually-hidden" aria-label="Хлебные крошки">
         <div class="container">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -132,19 +132,29 @@
 
       <section class="goods">
         <div class="container">
-          <h2 class="goods__title">Избранное</h2>
+          <h2 class="goods__title title">Избранное</h2>
 
           <ul class="goods__list">
             <li class="goods__item">
               <article class="card">
-                <div class="card__img-wrapper">
-                  <img
-                    src="src/assets/img/goods/product-1.jpg"
-                    width="302"
-                    height="250"
-                    alt="Горные лыжи, синие"
-                    loading="lazy"
-                  />
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-1.jpg"
+                      width="302"
+                      height="250"
+                      alt="Горные лыжи, синие"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Горные лыжи</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
                   <button
                     class="card__add-to-favorite button-favorite"
                     type="button"
@@ -155,10 +165,413 @@
                     </svg>
                   </button>
                 </div>
-                <h3 class="card__title">
-                  <a class="card__link" href="#">Горные лыжи</a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-2.jpg"
+                      width="302"
+                      height="250"
+                      alt="Сноуборд, черный"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Сноуборд</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-3.jpg"
+                      width="302"
+                      height="250"
+                      alt="Экипировка"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Экипировка</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-4.jpg"
+                      width="302"
+                      height="250"
+                      alt="Горные лыжи, черные"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Горные лыжи</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-5.jpg"
+                      width="302"
+                      height="250"
+                      alt="Сноуборд, древесного цвета"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Сноуборд</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-6.jpg"
+                      width="302"
+                      height="250"
+                      alt="Горные лыжи, черные"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Горные лыжи</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-7.jpg"
+                      width="302"
+                      height="250"
+                      alt="Экипировка, оранжевая"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Экипировка</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-8.jpg"
+                      width="302"
+                      height="250"
+                      alt="Сноуборд, бирюзовый"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Сноуборд</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-9.jpg"
+                      width="302"
+                      height="250"
+                      alt="Экипировка, желтая"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Экипировка</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-10.jpg"
+                      width="302"
+                      height="250"
+                      alt="Экипировка, синяя"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Экипировка</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-11.jpg"
+                      width="302"
+                      height="250"
+                      alt="Экипировка, оранжевая"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Экипировка</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="card__add-to-cart button" type="button">
+                  В корзину
+                </button>
+              </article>
+            </li>
+
+            <li class="goods__item">
+              <article class="card">
+                <div class="card__content">
+                  <div class="card__img">
+                    <img
+                      src="src/assets/img/goods/product-12.jpg"
+                      width="302"
+                      height="250"
+                      alt="Горные лыжи Новогодние"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="card__details">
+                    <h3 class="card__title">
+                      <a class="card__link" href="#">Горные лыжи Новогодние</a>
+                    </h3>
+                    <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                  </div>
+
+                  <button
+                    class="card__add-to-favorite button-favorite"
+                    type="button"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg width="16" height="14" aria-hidden="true">
+                      <use xlink:href="#favorite" />
+                    </svg>
+                  </button>
+                </div>
 
                 <button class="card__add-to-cart button" type="button">
                   В корзину

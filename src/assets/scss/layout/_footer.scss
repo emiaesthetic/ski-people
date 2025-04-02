@@ -23,14 +23,14 @@
     grid-template-areas: 'developers contacts copyright';
     gap: 24px;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     font-size: var(--font-size-small);
     color: var(--foreground-secondary);
 
     @include media.mobile {
       grid-template-areas:
-        'developers'
         'contacts'
+        'developers'
         'copyright';
     }
   }
@@ -45,6 +45,7 @@
 
   &__contacts {
     grid-area: 'contacts';
+    order: -1;
   }
 
   &__phone {

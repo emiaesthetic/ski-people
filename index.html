@@ -85,16 +85,16 @@
       </div>
     </header>
 
-    <main class="main visually-hidden">
+    <main class="main">
       <h1 class="visually-hidden">
         Ski People - магазин горнолыжного снаряжения
       </h1>
 
       <div class="catalog">
-        <div class="container">
+        <div class="catalog__container container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__link" href="#">Все</a>
+              <a class="catalog__link catalog__link--is-active" href="#">Все</a>
             </li>
             <li class="catalog__item">
               <a class="catalog__link" href="#">Лыжи</a>
@@ -112,23 +112,23 @@
         </div>
       </div>
 
-      <div class="breadcrumbs-container">
+      <nav class="breadcrumbs visually-hidden" aria-label="Хлебные крошки">
         <div class="container">
-          <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Главная</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Лыжи</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Горные лыжи</a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link link-active" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link link-active" href="#">Лыжи</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__current" aria-current="page">
+                Горные лыжи
+              </span>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
 
       <section class="goods">
         <div class="container">
@@ -169,7 +169,7 @@
         </div>
       </section>
 
-      <section class="product">
+      <section class="product visually-hidden">
         <div class="container">
           <h2 class="product__title">Горные лыжи</h2>
 
@@ -233,7 +233,7 @@
         </div>
       </section>
 
-      <section class="cart">
+      <section class="cart visually-hidden">
         <div class="container">
           <h2 class="cart__title">Корзина</h2>
 

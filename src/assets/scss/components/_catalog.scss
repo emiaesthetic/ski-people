@@ -1,0 +1,57 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.catalog {
+  overflow-x: hidden;
+  padding-block: 20px;
+
+  @include media.tablet {
+    padding-block: 16px;
+  }
+
+  @include media.tablet {
+    padding-block: 14px 10px;
+  }
+
+  &__container {
+    position: relative;
+    height: 38px;
+  }
+
+  &__list {
+    position: absolute;
+    left: var(--container-padding-x);
+    display: flex;
+    column-gap: 4px;
+    padding-right: calc(100vw - 100%);
+    scrollbar-width: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 11px 13px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-large);
+    font-size: var(--font-size-small);
+    background-color: var(--background-muted);
+    color: var(--foreground-muted);
+
+    @include mixins.transition(background-color, border-color, color);
+
+    @include mixins.hover {
+      border-color: var(--color-blue);
+      color: var(--foreground-primary);
+    }
+
+    @include mixins.focus {
+      background-color: var(--background-accent);
+      color: var(--foreground-secondary);
+    }
+
+    &--is-active {
+      background-color: var(--background-accent);
+      color: var(--foreground-secondary);
+      pointer-events: none;
+    }
+  }
+}

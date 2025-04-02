@@ -11,6 +11,12 @@
   }
 }
 
+.visible-mobile {
+  @include media.mobile-above {
+    display: none;
+  }
+}
+
 .title {
   font-weight: 900;
   font-size: var(--font-size-large);

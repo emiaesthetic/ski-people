@@ -11,19 +11,24 @@
 /* Components */
 @use './components/buttons';
 @use './components/logo';
+@use './components/table';
 @use './components/search';
 @use './components/user-actions';
 @use './components/catalog';
 @use './components/breadcrumbs';
 @use './components/card';
 @use './components/slider';
-@use './components/table';
+@use './components/cart-item';
+@use './components/order';
+@use './components/delivery';
+@use './components/counter';
 
 /* Layout */
 @use './layout/container';
 @use './layout/header';
 @use './layout/goods';
 @use './layout/product';
+@use './layout/checkout';
 @use './layout/footer';
 
 /* Utils */

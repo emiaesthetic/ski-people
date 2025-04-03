@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as mixins;
+
+.counter {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  width: max-content;
+  padding: 3px 6px;
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--border-radius-large);
+  font-size: var(--font-size-small);
+
+  &__button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    @include mixins.flex-center(true);
+    @include mixins.transition(background-color);
+
+    @include mixins.hover {
+      background-color: var(--background-muted);
+    }
+
+    @include mixins.focus-outline(0, var(--color-gray-light));
+  }
+}

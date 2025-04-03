@@ -1,0 +1,38 @@
+@use '../abstracts/media' as media;
+
+.order {
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+
+    @include media.mobile {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  &__details {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: var(--font-size-base);
+
+    @include media.mobile {
+      column-gap: 14px;
+      margin-bottom: 32px;
+      font-size: var(--font-size-small);
+    }
+  }
+
+  &__delivery {
+    margin-bottom: 12px;
+    font-size: var(--font-size-small);
+    color: var(--foreground-muted);
+
+    @include media.mobile {
+      margin-bottom: 8px;
+    }
+  }
+}

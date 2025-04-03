@@ -1,0 +1,80 @@
+@use '../abstracts/media' as media;
+
+.checkout {
+  padding-block: 20px 100px;
+
+  @include media.tablet {
+    padding-block: 16px 80px;
+  }
+
+  @include media.mobile {
+    padding-block: 12px 60px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+    justify-content: space-between;
+
+    @include media.tablet {
+      row-gap: 32px;
+    }
+
+    @include media.tablet {
+      row-gap: 24px;
+    }
+  }
+
+  &__cart {
+    flex: 1 1 60%;
+    max-width: 514px;
+
+    @include media.laptop {
+      flex-basis: 50%;
+    }
+
+    @include media.tablet {
+      flex-basis: 100%;
+      max-width: unset;
+    }
+  }
+
+  &__order {
+    flex: 0 1 35%;
+    max-width: 408px;
+
+    @include media.laptop {
+      flex-basis: 302px;
+    }
+
+    @include media.tablet {
+      flex-basis: 100%;
+      order: 1;
+      max-width: unset;
+    }
+  }
+
+  &__delivery-wrapper {
+    width: 100%;
+    padding-top: 40px;
+    border-top: 1px solid var(--color-gray-light);
+
+    @include media.tablet {
+      padding-block: 32px;
+      border-bottom: 1px solid var(--color-gray-light);
+    }
+
+    @include media.tablet {
+      padding-block: 24px;
+    }
+  }
+
+  &__delivery {
+    max-width: 832px;
+
+    @include media.tablet {
+      max-width: unset;
+    }
+  }
+}

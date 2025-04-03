@@ -42,22 +42,33 @@
 }
 
 .button-favorite {
+  --fill-color: var(--color-white);
+  --stroke-color: var(--color-dark);
+
   width: 16px;
   height: 16px;
   border-radius: var(--border-radius-small);
-  color: var(--foreground-secondary);
+  color: var(--stroke-color);
 
   @include mixins.flex-center(true);
-  @include mixins.transition(color);
+  @include mixins.transition(stroke, fill);
 
   @include mixins.hover {
-    color: var(--foreground-muted);
+    --fill-color: var(--color-gray-light);
+    --stroke-color: var(--color-blue);
   }
 
   @include mixins.focus-outline(4px);
 
+  & svg {
+    fill: var(--fill-color);
+    transition: inherit;
+  }
+
   &--is-active {
-    color: var(--foreground-accent);
-    stroke: transparent;
+    --fill-color: var(--color-blue);
+    --stroke-color: transparent;
+
+    pointer-events: none;
   }
 }

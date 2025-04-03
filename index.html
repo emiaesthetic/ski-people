@@ -960,48 +960,61 @@
 
                   <fieldset class="delivery__extra">
                     <legend class="delivery__legend">Доставка</legend>
-                    <label class="delivery__label">
+                    <div class="delivery__field">
                       <input
                         class="delivery__radio"
                         type="radio"
                         name="deliveryType"
                         value="delivery"
+                        id="delivery"
                         required
                       />
-                      Доставка
-                    </label>
-                    <label class="delivery__label">
+                      <label class="delivery__label" for="delivery">
+                        Доставка
+                      </label>
+                    </div>
+
+                    <div class="delivery__field">
                       <input
                         class="delivery__radio"
                         type="radio"
                         name="deliveryType"
                         value="pickup"
+                        id="pickup"
                       />
-                      Самовывоз
-                    </label>
+                      <label class="delivery__label" for="pickup">
+                        Самовывоз
+                      </label>
+                    </div>
                   </fieldset>
 
                   <fieldset class="delivery__extra">
                     <legend class="delivery__legend">Оплата</legend>
-                    <label class="delivery__label">
+                    <div class="delivery__field">
                       <input
                         class="delivery__radio"
                         type="radio"
                         name="paymentType"
                         value="card"
+                        id="card"
                         required
                       />
-                      Картой при получении
-                    </label>
-                    <label class="delivery__label">
+                      <label class="delivery__label" for="card">
+                        Картой при получении
+                      </label>
+                    </div>
+                    <div class="delivery__field">
                       <input
                         class="delivery__radio"
                         type="radio"
                         name="paymentType"
                         value="cash"
+                        id="cash"
                       />
-                      Наличными при получении
-                    </label>
+                      <label class="delivery__label" for="cash">
+                        Наличными при получении
+                      </label>
+                    </div>
                   </fieldset>
                 </div>
               </form>

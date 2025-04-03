@@ -90,7 +90,7 @@
         Ski People - магазин горнолыжного снаряжения
       </h1>
 
-      <div class="catalog visually-hidden">
+      <div class="catalog">
         <div class="catalog__container container">
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <nav class="breadcrumbs visually-hidden" aria-label="Хлебные крошки">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
         <div class="container">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -130,7 +130,7 @@
         </div>
       </nav>
 
-      <section class="goods visually-hidden">
+      <section class="goods">
         <div class="container">
           <h2 class="goods__title title">Избранное</h2>
 
@@ -582,7 +582,7 @@
         </div>
       </section>
 
-      <section class="product visually-hidden">
+      <section class="product">
         <div class="container">
           <h2 class="product__title title">Горные лыжи</h2>
 
@@ -1006,49 +1006,53 @@
                 </div>
               </form>
             </div>
-          </div>
 
-          <div class="checkout__order-succes order-succes visually-hidden">
-            <div class="order-succes__header">
-              <h3 class="order-succes__title">Заказ успешно размещен</h3>
-              <p class="order-succes__price">20&nbsp;000&nbsp;₽</p>
+            <div class="checkout__order-success order-success">
+              <div class="order-success__container">
+                <div class="order-success__header">
+                  <h3 class="order-success__title">Заказ успешно размещен</h3>
+                  <p class="order-success__price">20&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <p class="order-success__number">№43435</p>
+
+                <table class="order-success__table table">
+                  <caption class="table__title">Данные доставки</caption>
+                  <tbody class="table__body">
+                    <tr class="table__row">
+                      <td class="table__data">Получатель</td>
+                      <td class="table__data">Иванов Петр Александрович</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Телефон</td>
+                      <td class="table__data">+7 (737) 346 23 00</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">E-mail</td>
+                      <td class="table__data">Ivanov84@gmail.com</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Адрес доставки</td>
+                      <td class="table__data">
+                        Москва, ул. Ленина, 21, кв. 33
+                      </td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Способ оплаты</td>
+                      <td class="table__data">Картой при получении</td>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">Способ получения</td>
+                      <td class="table__data">Доставка</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <a class="order-success__link button button--accent" href="/">
+                  На главную
+                </a>
+              </div>
             </div>
-
-            <p class="order-succes__number">№43435</p>
-
-            <table class="order-succes__table table">
-              <caption class="table__title">Данные доставки</caption>
-              <tbody class="table__body">
-                <tr class="table__row">
-                  <td class="table__data">Получатель</td>
-                  <td class="table__data">Иванов Петр Александрович</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__data">Телефон</td>
-                  <td class="table__data">+7 (737) 346 23 00</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__data">E-mail</td>
-                  <td class="table__data">Ivanov84@gmail.com</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__data">Адрес доставки</td>
-                  <td class="table__data">Москва, ул. Ленина, 21, кв. 33</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__data">Способ оплаты</td>
-                  <td class="table__data">Картой при получении</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__data">Способ получения</td>
-                  <td class="table__data">Доставка</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <a class="order-succes__link button button--accent" href="/">
-              На главную
-            </a>
           </div>
         </div>
       </section>

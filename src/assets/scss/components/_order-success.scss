@@ -1,0 +1,62 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.order-success {
+  max-width: 832px;
+  margin: 0 auto;
+  padding: 60px;
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--border-radius-medium);
+  font-size: var(--font-size-small);
+
+  @include media.laptop {
+    max-width: 726px;
+  }
+
+  @include media.mobile {
+    margin-inline: calc(-1 * var(--container-padding-x));
+    padding: 24px var(--container-padding-x);
+  }
+
+  &__container {
+    max-width: 408px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    @include media.mobile {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: var(--font-size-medium);
+  }
+
+  &__price {
+    font-size: var(--font-size-medium);
+  }
+
+  &__number {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 4px 8px;
+    border-radius: var(--border-radius-large);
+    background-color: var(--background-muted);
+
+    @include media.mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    @include mixins.flex-center;
+  }
+}

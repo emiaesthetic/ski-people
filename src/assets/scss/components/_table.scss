@@ -9,15 +9,20 @@
   font-size: var(--font-size-small);
 
   &__title {
-    display: block;
+    display: table-caption;
+    width: 100%;
     margin-bottom: 12px;
     font-size: var(--font-size-base);
-    text-align-last: left;
+    text-align: left;
   }
 
   &__data {
     padding-bottom: 8px;
     border-bottom: 1px solid var(--color-gray-light);
+
+    &:first-of-type {
+      color: var(--foreground-muted);
+    }
 
     &:last-of-type {
       text-align: right;

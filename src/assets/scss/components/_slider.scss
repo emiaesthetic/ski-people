@@ -1,0 +1,80 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.slider {
+  &__current {
+    position: relative;
+    margin-bottom: 16px;
+
+    @include media.mobile {
+      margin-bottom: unset;
+    }
+
+    & img {
+      object-fit: cover;
+      border-radius: var(--border-radius-medium);
+    }
+  }
+
+  &__controls {
+    --offset: 24px;
+
+    position: absolute;
+    top: 50%;
+    right: var(--offset);
+    left: var(--offset);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media.mobile {
+      --offset: 16px;
+    }
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--background-muted);
+    color: var(--font-primary);
+
+    @include mixins.flex-center(true);
+    @include mixins.transition(background-color);
+
+    @include mixins.hover {
+      background-color: var(--background-primary);
+    }
+
+    @include mixins.focus-outline(0, var(--color-dark));
+
+    &--next {
+      rotate: 180deg;
+    }
+  }
+
+  &__thumbnails {
+    display: flex;
+    column-gap: 16px;
+
+    @include media.laptop {
+      column-gap: 12px;
+    }
+
+    @include media.tablet {
+      column-gap: 14px;
+    }
+
+    & img {
+      flex-shrink: 1;
+      object-fit: cover;
+      min-width: 146px;
+      max-width: 100%;
+      border-radius: var(--border-radius-medium);
+
+      @include media.laptop {
+        min-width: 98px;
+      }
+    }
+  }
+}

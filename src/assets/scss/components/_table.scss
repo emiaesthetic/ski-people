@@ -1,0 +1,26 @@
+@use '../abstracts/media' as media;
+@use '../abstracts/mixins' as mixins;
+
+.table {
+  width: 100%;
+  margin-bottom: 24px;
+  border-spacing: 0 8px;
+  border-collapse: separate;
+  font-size: var(--font-size-small);
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: var(--font-size-base);
+    text-align-last: left;
+  }
+
+  &__data {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-gray-light);
+
+    &:last-of-type {
+      text-align: right;
+    }
+  }
+}

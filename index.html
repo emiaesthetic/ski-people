@@ -130,7 +130,7 @@
         </div>
       </nav>
 
-      <section class="goods">
+      <section class="goods visually-hidden">
         <div class="container">
           <h2 class="goods__title title">Избранное</h2>
 
@@ -582,65 +582,124 @@
         </div>
       </section>
 
-      <section class="product visually-hidden">
+      <section class="product">
         <div class="container">
-          <h2 class="product__title">Горные лыжи</h2>
+          <h2 class="product__title title">Горные лыжи</h2>
 
-          <div class="product__slider">
-            <div class="product__current-img"></div>
-            <div class="product__thumbnails"></div>
-          </div>
+          <div class="product__content">
+            <div class="product__slider slider">
+              <div class="slider__current">
+                <img
+                  src="/src/assets/img/product/current.jpg"
+                  width="832"
+                  height="688"
+                  alt="Текущее фото товара"
+                  loading="lazy"
+                />
 
-          <div class="product__details">
-            <p class="product__price">5&nbsp;000&nbsp;₽</p>
-            <p class="product__id">арт.5&nbsp;84348945757</p>
+                <div class="slider__controls">
+                  <button
+                    class="slider__button slider__button--prev"
+                    type="button"
+                  >
+                    <svg width="8" height="14" aria-hidden="true">
+                      <use xlink:href="#arrow" />
+                    </svg>
+                  </button>
 
-            <table class="product__table table">
-              <caption class="table__title">Общие характеристики</caption>
-              <tbody class="table__body">
-                <tr class="table__row">
-                  <td class="table__name">Коллекция</td>
-                  <td class="table__value">Snow</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__name">Производитель</td>
-                  <td class="table__value">Россия</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__name">Гарантия</td>
-                  <td class="table__value">18 мес.</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__name">Срок службы</td>
-                  <td class="table__value">5 лет</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__name">Цвет</td>
-                  <td class="table__value">Синий</td>
-                </tr>
-                <tr class="table__row">
-                  <td class="table__name">Макс. нагрузка</td>
-                  <td class="table__value">130 кг</td>
-                </tr>
-              </tbody>
-            </table>
+                  <button
+                    class="slider__button slider__button--next"
+                    type="button"
+                  >
+                    <svg width="8" height="14" aria-hidden="true">
+                      <use xlink:href="#arrow" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="slider__thumbnails hidden-mobile">
+                <img
+                  src="/src/assets/img/product/thumbnail.jpg"
+                  width="196"
+                  height="162"
+                  alt="Следующее фото товара"
+                  loading="lazy"
+                />
+                <img
+                  src="/src/assets/img/product/thumbnail.jpg"
+                  width="196"
+                  height="162"
+                  alt="Следующее фото товара"
+                  loading="lazy"
+                />
+                <img
+                  src="/src/assets/img/product/thumbnail.jpg"
+                  width="196"
+                  height="162"
+                  alt="Следующее фото товара"
+                  loading="lazy"
+                />
+                <img
+                  src="/src/assets/img/product/thumbnail.jpg"
+                  width="196"
+                  height="162"
+                  alt="Следующее фото товара"
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
-            <div class="product__actions">
-              <button
-                class="product__add-to-cart button button--accent"
-                type="button"
-              >
-                В корзину
-              </button>
-              <button
-                class="product__add-to-favorite button-favorite"
-                type="button"
-                aria-label="Добавить в избранное"
-              >
-                <svg width="16" height="14" aria-hidden="true">
-                  <use xlink:href="#favorite" />
-                </svg>
-              </button>
+            <div class="product__details">
+              <p class="product__price">5&nbsp;000&nbsp;₽</p>
+              <p class="product__id">арт.&nbsp;84348945757</p>
+
+              <table class="product__table table">
+                <caption class="table__title">Общие характеристики</caption>
+                <tbody class="table__body">
+                  <tr class="table__row">
+                    <td class="table__data">Коллекция</td>
+                    <td class="table__data">Snow</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data">Производитель</td>
+                    <td class="table__data">Россия</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data">Гарантия</td>
+                    <td class="table__data">18 мес.</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data">Срок службы</td>
+                    <td class="table__data">5 лет</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data">Цвет</td>
+                    <td class="table__data">Синий</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data">Макс. нагрузка</td>
+                    <td class="table__data">130 кг</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="product__actions">
+                <button
+                  class="product__add-to-cart button button--accent"
+                  type="button"
+                >
+                  В корзину
+                </button>
+                <button
+                  class="product__add-to-favorite button-favorite"
+                  type="button"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg width="16" height="14" aria-hidden="true">
+                    <use xlink:href="#favorite" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

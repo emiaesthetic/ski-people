@@ -90,7 +90,7 @@
         Ski People - магазин горнолыжного снаряжения
       </h1>
 
-      <div class="catalog">
+      <div class="catalog visually-hidden">
         <div class="catalog__container container">
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -112,7 +112,7 @@
         </div>
       </div>
 
-      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <nav class="breadcrumbs visually-hidden" aria-label="Хлебные крошки">
         <div class="container">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -130,7 +130,7 @@
         </div>
       </nav>
 
-      <section class="goods">
+      <section class="goods visually-hidden">
         <div class="container">
           <h2 class="goods__title title">Избранное</h2>
 
@@ -588,64 +588,192 @@
 
           <div class="product__content">
             <div class="product__slider slider">
-              <div class="slider__current">
-                <img
-                  src="/src/assets/img/product/current.jpg"
-                  width="832"
-                  height="688"
-                  alt="Текущее фото товара"
-                  loading="lazy"
-                />
-
-                <div class="slider__controls">
-                  <button
-                    class="slider__button slider__button--prev"
-                    type="button"
-                  >
-                    <svg width="8" height="14" aria-hidden="true">
-                      <use xlink:href="#arrow" />
-                    </svg>
-                  </button>
-
-                  <button
-                    class="slider__button slider__button--next"
-                    type="button"
-                  >
-                    <svg width="8" height="14" aria-hidden="true">
-                      <use xlink:href="#arrow" />
-                    </svg>
-                  </button>
+              <div class="slider__current swiper">
+                <div class="slider__current-wrapper swiper-wrapper">
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-1.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-2.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-3.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-4.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-5.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-6.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-7.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-8.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-9.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__current-slide swiper-slide"
+                    src="/src/assets/img/product/product-10.jpg"
+                    width="832"
+                    height="688"
+                    alt="Текущее фото товара"
+                    loading="lazy"
+                  />
                 </div>
+
+                <button
+                  class="slider__current-button slider__current-button--prev"
+                  type="button"
+                >
+                  <svg width="8" height="14" aria-hidden="true">
+                    <use xlink:href="#arrow" />
+                  </svg>
+                </button>
+
+                <button
+                  class="slider__current-button slider__current-button--next"
+                  type="button"
+                >
+                  <svg width="8" height="14" aria-hidden="true">
+                    <use xlink:href="#arrow" />
+                  </svg>
+                </button>
               </div>
-              <div class="slider__thumbnails hidden-mobile">
-                <img
-                  src="/src/assets/img/product/thumbnail.jpg"
-                  width="196"
-                  height="162"
-                  alt="Следующее фото товара"
-                  loading="lazy"
-                />
-                <img
-                  src="/src/assets/img/product/thumbnail.jpg"
-                  width="196"
-                  height="162"
-                  alt="Следующее фото товара"
-                  loading="lazy"
-                />
-                <img
-                  src="/src/assets/img/product/thumbnail.jpg"
-                  width="196"
-                  height="162"
-                  alt="Следующее фото товара"
-                  loading="lazy"
-                />
-                <img
-                  src="/src/assets/img/product/thumbnail.jpg"
-                  width="196"
-                  height="162"
-                  alt="Следующее фото товара"
-                  loading="lazy"
-                />
+
+              <div class="slider__thumbnails swiper hidden-mobile">
+                <div class="slider__thumbnails-wrapper swiper-wrapper">
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-1.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-2.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-3.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-4.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-5.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-6.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-7.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-8.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-9.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                  <img
+                    class="slider__thumbnails-slide swiper-slide"
+                    src="/src/assets/img/product/thumbnail-10.jpg"
+                    width="196"
+                    height="162"
+                    alt="Следующее фото товара"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
 
@@ -705,7 +833,7 @@
         </div>
       </section>
 
-      <section class="checkout">
+      <section class="checkout visually-hidden">
         <div class="container">
           <h2 class="checkout__title title">Корзина</h2>
 

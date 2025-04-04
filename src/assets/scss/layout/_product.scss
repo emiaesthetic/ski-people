@@ -46,6 +46,10 @@
     background-color: var(--background-muted);
   }
 
+  &__slider {
+    flex: 0 1 832px;
+  }
+
   &__table {
     min-width: 303px;
 

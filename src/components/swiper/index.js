@@ -1,0 +1,1 @@
+export { initSwiper } from './swiper';

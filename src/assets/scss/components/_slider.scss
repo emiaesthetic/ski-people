@@ -5,34 +5,24 @@
   &__current {
     position: relative;
     margin-bottom: 16px;
+    border-radius: var(--border-radius-medium);
 
     @include media.mobile {
       margin-bottom: unset;
     }
-
-    & img {
-      object-fit: cover;
-      border-radius: var(--border-radius-medium);
-    }
   }
 
-  &__controls {
+  &__current-slide {
+    object-fit: cover;
+    border-radius: var(--border-radius-medium);
+  }
+
+  &__current-button {
     --offset: 24px;
 
     position: absolute;
     top: 50%;
-    right: var(--offset);
-    left: var(--offset);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include media.mobile {
-      --offset: 16px;
-    }
-  }
-
-  &__button {
+    z-index: 10;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -48,33 +38,23 @@
 
     @include mixins.focus-outline(0, var(--color-dark));
 
+    @include media.mobile {
+      --offset: 16px;
+    }
+
+    &--prev {
+      left: var(--offset);
+      transform: translateY(-50%);
+    }
+
     &--next {
+      right: var(--offset);
+      transform: translateY(50%);
       rotate: 180deg;
     }
   }
 
-  &__thumbnails {
-    display: flex;
-    column-gap: 16px;
-
-    @include media.laptop {
-      column-gap: 12px;
-    }
-
-    @include media.tablet {
-      column-gap: 14px;
-    }
-
-    & img {
-      flex-shrink: 1;
-      object-fit: cover;
-      min-width: 146px;
-      max-width: 100%;
-      border-radius: var(--border-radius-medium);
-
-      @include media.laptop {
-        min-width: 98px;
-      }
-    }
+  &__thumbnails-slide {
+    border-radius: var(--border-radius-medium);
   }
 }

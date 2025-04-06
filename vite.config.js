@@ -35,7 +35,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(process.cwd(), 'src')
+      app: '/src/app',
+      assets: '/src/assets',
+      pages: '/src/pages',
+      shared: '/src/shared',
     },
   },
 });

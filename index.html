@@ -8,21 +8,21 @@
 
     <link
       rel="preload"
-      href="src/assets/fonts/OpenSans.woff2"
+      href="/fonts/OpenSans.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="src/assets/fonts/Inter-Regular.woff2"
+      href="/fonts/Inter-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="src/assets/fonts/Inter-Black.woff2"
+      href="/fonts/Inter-Black.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -30,13 +30,13 @@
 
     <title>Ski People</title>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/app/main.js"></script>
   </head>
 
   <body class="page">
-    <header class="header">
+    <header class="header visually-hidden">
       <div class="container">
-        <div class="header__container">
+        <div class="header__content">
           <a
             class="header__logo logo"
             href="/"
@@ -582,7 +582,7 @@
         </div>
       </section>
 
-      <section class="product">
+      <section class="product visually-hidden">
         <div class="container">
           <h2 class="product__title title">Горные лыжи</h2>
 
@@ -675,6 +675,7 @@
                 <button
                   class="slider__current-button slider__current-button--prev"
                   type="button"
+                  aria-label="Назад"
                 >
                   <svg width="8" height="14" aria-hidden="true">
                     <use xlink:href="#arrow" />
@@ -684,6 +685,7 @@
                 <button
                   class="slider__current-button slider__current-button--next"
                   type="button"
+                  aria-label="Вперед"
                 >
                   <svg width="8" height="14" aria-hidden="true">
                     <use xlink:href="#arrow" />
@@ -1199,7 +1201,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer visually-hidden">
       <div class="container">
         <a
           class="footer__logo logo"
